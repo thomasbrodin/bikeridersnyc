@@ -1,0 +1,21 @@
+/*
+Theme Name: BIKERIDERS
+Theme URI: http://themeforest.net/user/FinalDestiny
+Version: 0.1.0
+Description: Custom Theme for BIKERIDERSNYC.COM
+Author: HEX
+Author URI: http://hexcreativenetwork.com
+*/
+
+@media only screen and (min-width: 1100px) {
+	.separator1 .bg, #intro .bg1 {
+		background-attachment: fixed !important;
+	}
+}
+@media only screen and (max-width: 1050px) {
+	.hoverimage { 
+		display: none !important;
+	}
+}
+
+#wpadminbar {display: none}

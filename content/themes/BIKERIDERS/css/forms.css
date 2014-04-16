@@ -1,0 +1,400 @@
+#appointment_form input[type="submit"] {
+    font-size: 18px;
+    padding: 8px 16px;
+    margin-bottom: 0;
+    display: block;
+}
+
+#service_form input[type="submit"] {
+	font-size: 18px;
+    padding: 8px 16px;
+    margin-bottom: 0;
+    display: block;
+	margin-top: -5px;
+}
+
+/* #Service Form
+================================================== */
+#service_form {
+	margin-top: 137px;
+	margin-left: 23px;
+}
+
+#service_form form{
+	margin-bottom: 0;
+}
+
+#service_form textarea {
+    min-width: 320px;	
+    border: 1px solid #000;
+    padding: 10px;
+    min-height:40px;
+    color:#000;
+    margin-top:35px;
+}
+
+#service_form input[type="text"] {
+	border: 1px solid #000;
+	padding: 6px 4px;
+	outline: none;
+	font: 13px 'din-medium', sans-serif;
+	color: #000;
+	margin: 0;
+	width: 200px;
+	max-width: 100%;
+	display: block;
+	background: #fff;
+}
+
+#service_form p{
+    display: block; 	
+    line-height: 24px;
+    margin-bottom: 15px;
+}
+
+#service_form label {
+    float: left;
+    color: #000!important;
+}
+
+input[type="text"]#service_form_zip {
+	width: 105px;
+}
+
+input[type="text"]#service_form_appointment {
+	width: 105px;
+	background: #FFF url('../images/sprite.png') no-repeat right 0;
+}
+
+input[type="text"]#service_form_appointment:hover{
+	background-position: right -63px;
+}
+
+#service_form select {
+	color: grey;
+	width: 100px;
+	float: right;
+	margin-bottom: 5px;
+	border: 1px solid #000;
+	background: #FFF url('../images/select.png') no-repeat right 0;
+	-webkit-appearance: none;
+	border-radius: 0;
+	padding: 6px;
+}
+
+select#service_form_appointment_time {
+	width: 140px;
+	margin: 20px 0;
+}
+
+#service_form_state {
+	float: left;
+	padding:0px 25px 0 0px;
+	color: #000!important;
+}
+
+
+/* #Appointments Form
+================================================== */
+#appointment_form form{
+	margin-bottom:0;
+}
+
+#appointment_form.iframe form{
+	margin-bottom:0;
+	margin-top: 110px;
+}
+
+span.notification {
+	float:right;
+}
+
+#appointment_form input[type="text"] {
+	width: 200px;
+	border: 1px solid #000;
+	padding: 6px 4px;
+	outline: none;
+	font: 13px 'din-medium', sans-serif;
+	color: #000;
+	margin: 0;
+	max-width: 100%;
+	display: block;
+	background: #fff;
+	float: right;
+}
+
+ #appointment_form select{
+    color: #000;
+    width: 210px;
+    float: right;
+    margin-bottom: 0;
+    background: #FFF url('../images/select.png') no-repeat right 0;
+    border: 1px solid #000;
+    -webkit-appearance: none;
+	border-radius: 0;
+	padding: 6px;
+}
+
+select#appointment_form_appointment_time {
+	margin-top: 7px;
+}
+
+select#appointment_form_city {
+	width: 130px;}
+
+
+#appointment_form textarea{
+    min-width: 390px;	
+    border: 1px solid #000;
+    margin-bottom:0;
+    margin-top:40px;
+    min-height: 30px;
+}
+#appointment_form.iframe textarea {
+	min-width: 345px;
+}
+
+#appointment_form p{
+    display: block; 
+	clear: left;
+	line-height: 30px;
+	padding: 10px 0;
+}
+
+#appointment_form.iframe p{
+	padding: 5px 0 0;
+	margin;
+	margin-right:0;
+	margin-bottom: 4px;
+	clear: both;
+}
+
+#appointment_form.iframe p#appointment_form_response{
+	padding: 0;
+	color: #de8d23;
+	line-height: 18px;
+	font-size: 14px;
+}
+
+#appointment_form label {
+    float: left;
+    font-size: 13px;
+    vertical-align: middle;
+    color: #000;
+    margin-right: 14px;
+}
+#appointment_form.iframe label {
+	margin-right: 0
+}
+
+label#appointment_form_loc{
+	padding: 0 16px 0 15px;
+	border:1px solid #000;
+	float: right;
+	margin-right:0;
+	font-size: 14px;
+}
+
+#appointment_form input[type="radio"]{
+   display:none}
+
+#appointment_form input[type="radio"]:checked + label#appointment_form_loc {
+	background:#000;
+	color:#fff;
+}
+
+input[type="text"]#appointment_form_zip {
+	width: 120px;
+}
+
+input#appointment_form_appointment {
+	width: 120px;
+	background: #FFF url('../images/sprite.png') no-repeat right 0;
+}
+
+input#appointment_form_appointment:hover{
+	background-position: right -63px;
+}
+
+#appointment_form_state {
+	float: right;
+	padding: 0px
+}
+
+/* Errors */
+
+#service_form .error{
+	margin-left: 370px;
+	margin-top: -25px;
+}
+
+#appointment_form .error{
+	margin-left:140px;
+	margin-top:0;
+}
+
+#appointment_form.iframe .error{
+	margin-left: 565px;
+	margin-top: 0px;
+}
+
+/* MEDIA QUERIES
+================================================== */
+
+/* IPAD */
+	 @media only screen and (min-device-width: 600px) and (max-device-width: 1024px) {
+	
+		#appointment_form textarea {
+			min-width: 310px;
+		}
+
+		#appointment_form input[type="text"] {
+			min-width: 200px;
+			margin-bottom: 5px;
+		}
+		select#appointment_form_appointment_type {
+			width: 160px;
+		}
+
+		#appointment_form.iframe select#appointment_form_appointment_type {
+		width: 140px;
+		}
+
+		#appointment_form.iframe label {
+		margin-right: 0;
+		}
+
+		#appointment_form.iframe input[type="text"] {
+			min-width: 180px;
+			margin-bottom: 5px;
+		}
+
+		#appointment_form.iframe textarea {
+			min-width: 300px;
+		}
+		
+	}
+	/* IFRAME IPAD */
+	@media only screen and (min-width: 568px) and (max-width: 767px) {
+      
+        #appointment_form.iframe textarea {
+            min-width: 280px;
+        }
+        label#appointment_form_loc {
+            padding:0 10px 0 16px;
+        }
+
+     
+	}
+	
+	@media only screen and (min-width: 320px) and (max-width: 568px) {
+
+		/* service */
+
+		#service_form {
+		margin-bottom: 185px;
+		margin-top: 30px;
+		margin-left:0;
+		height: 100%;
+		}
+
+		#service_form:after {
+		  content: "";
+		  display: block;
+		}
+
+		#service_form label {
+		margin-right:0;
+		font-size:12px;
+		}
+
+		#service_form input[type="text"] {
+			min-width: 280px
+		}
+		#service_form select {
+			float: left;
+			margin-right:30px;
+			margin-bottom: 15px;
+			width: 150px;
+		}
+
+
+		#service_form textarea {
+			min-width: 280px;
+		}
+
+		/* Appointments */
+		#appointment_form label {
+			font-size:12px;
+			margin-right: 10px
+		}
+
+		#appointment_form:after {
+		  content: "";
+		  display: block;
+		}
+
+		#appointment_form input[type="text"] {
+			min-width:200px;
+		}
+		
+		#appointment_form textarea{
+			min-width: 290px;
+		}
+
+		#appointment_form select#appointment_form_appointment_type {
+		width: 148px;
+		padding: 6px 2px;
+		}
+
+		/* Appointments fancybox*/
+		#appointment_form.iframe {
+			margin-bottom: 235px;
+			margin-top: 0px;
+			margin-left:0;
+			height: 100%;
+		}
+
+		#appointment_form.iframe select#appointment_form_appointment_type {
+		width: 150px;
+		padding: 6px 2px;
+		background: none;
+		margin-bottom: 10px
+		}
+
+		#appointment_form.iframe form {
+		margin-bottom: 0;
+		margin-top: 30px;
+		}
+
+		#appointment_form.iframe label {
+		margin-right: 0;
+		font-size:12px;
+		}
+
+		#appointment_form.iframe textarea{
+			min-width: 280px;
+		}
+
+		#appointment_form.iframe input[type="text"]{
+			min-width: 180px;
+		}
+		
+		/* Errors */
+
+		#service_form .error{
+			margin-left: 35px;
+			margin-top: -25px;
+		}
+
+		#appointment_form .error{
+			margin-left:120px;
+			margin-top:0;
+		}
+
+		#appointment_form.iframe .error{
+			margin-left: 70px;
+			margin-top: 0px;
+		}
+	
+	}
