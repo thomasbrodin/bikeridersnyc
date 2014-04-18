@@ -13,11 +13,6 @@ if ( file_exists( dirname( __FILE__ ) . '/local-config.php' ) ) {
 	define('DB_PASSWORD', 'E$9LviI0j4');
 	/** MySQL hostname */
 	define('DB_HOST', 'localhost:3306');
-<<<<<<< HEAD
-
-=======
-	
->>>>>>> 9f6cf6500810efb1f7f30931f878474a9c26f108
 	define('FORCE_SSL_LOGIN', true);
 	define('FORCE_SSL_ADMIN', true);
 	if ($_SERVER['HTTP_X_FORWARDED_PROTO'] == 'https') $_SERVER['HTTPS']='on';
