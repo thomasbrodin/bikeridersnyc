@@ -12,7 +12,13 @@ if ( file_exists( dirname( __FILE__ ) . '/local-config.php' ) ) {
 	/** MySQL database password */
 	define('DB_PASSWORD', 'E$9LviI0j4');
 	/** MySQL hostname */
-	define('DB_HOST', 'localhost');
+	define('DB_HOST', 'localhost:3306');
+
+	define('FORCE_SSL_LOGIN', true);
+	define('FORCE_SSL_ADMIN', true);
+	if ($_SERVER['HTTP_X_FORWARDED_PROTO'] == 'https') $_SERVER['HTTPS']='on';
+
+	define( 'WP_AUTO_UPDATE_CORE', false );
 }
 
 // ========================
