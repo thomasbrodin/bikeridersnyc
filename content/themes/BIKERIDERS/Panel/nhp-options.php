@@ -1,18 +1,6 @@
 <?php
 
-/*
 
- * 
-
- * Require the framework class before doing anything else, so we can use the defined urls and dirs
-
- * Also if running on windows you may have url problems, which can be fixed by defining the framework url first
-
- *
-
- */
-
-//define('NHP_OPTIONS_URL', site_url('path the options folder'));
 
 if(!class_exists('NHP_Options')){
 
@@ -21,70 +9,9 @@ if(!class_exists('NHP_Options')){
 }
 
 
-
 /*
-
- * 
-
- * Custom function for filtering the sections array given by theme, good for child themes to override or add to the sections.
-
- * Simply include this function in the child themes functions.php file.
-
- *
-
- * NOTE: the defined constansts for urls, and dir will NOT be available at this point in a child theme, so you must use
-
- * get_template_directory_uri() if you want to use any of the built in icons
-
- *
-
- */
-
-function add_another_section($sections){
-
-	
-
-	//$sections = array();
-
-	$sections[] = array(
-
-				'title' => __('A Section added by hook', 'nhp-opts'),
-
-				'desc' => __('<p class="description">This is a section created by adding a filter to the sections array, great to allow child themes, to add/remove sections from the options.</p>', 'nhp-opts'),
-
-				//all the glyphicons are included in the options folder, so you can hook into them, or link to your own custom ones.
-
-				//You dont have to though, leave it blank for default.
-
-				'icon' => trailingslashit(get_template_directory_uri()).'options/img/glyphicons/glyphicons_062_attach.png',
-
-				//Lets leave this as a blank section, no options just some intro text set above.
-
-				'fields' => array()
-
-				);
-
-	
-
-	return $sections;
-
-	
-
-}//function
-
-//add_filter('nhp-opts-sections-twenty_eleven', 'add_another_section');
-
-
-
-
-
-/*
-
- * 
 
  * Custom function for filtering the args array given by theme, good for child themes to override or add to the args array.
-
- *
 
  */
 
@@ -110,15 +37,9 @@ function change_framework_args($args){
 
  * This is the meat of creating the options page
 
- *
-
  * Override some of the default values, uncomment the args and change the values
 
  * - no $args are required, but there there to be over ridden if needed.
-
- *
-
- *
 
  */
 
@@ -163,7 +84,6 @@ $args['opt_name'] = 'BK';
 //Custom menu icon
 
 //$args['menu_icon'] = '';
-
 
 
 //Custom menu title for options page - default is "Options"
@@ -228,39 +148,31 @@ $args['footer_credit'] = '';
 
 //Set ANY custom page help tabs - displayed using the new help tab API, show in order of definition		
 
-$args['help_tabs'][] = array(
+// $args['help_tabs'][] = array(
 
-							'id' => 'nhp-opts-1',
+// 							'id' => 'nhp-opts-1',
 
-							'title' => __('Theme Information 1', 'nhp-opts'),
+// 							'title' => __('Theme Information 1', 'nhp-opts'),
 
-							'content' => __('<p>This is the tab content, HTML is allowed.</p>', 'nhp-opts')
+// 							'content' => __('<p>This is the tab content, HTML is allowed.</p>', 'nhp-opts')
 
-							);
+// 							);
 
-$args['help_tabs'][] = array(
+// $args['help_tabs'][] = array(
 
-							'id' => 'nhp-opts-2',
+// 							'id' => 'nhp-opts-2',
 
-							'title' => __('Theme Information 2', 'nhp-opts'),
+// 							'title' => __('Theme Information 2', 'nhp-opts'),
 
-							'content' => __('<p>This is the tab content, HTML is allowed.</p>', 'nhp-opts')
+// 							'content' => __('<p>This is the tab content, HTML is allowed.</p>', 'nhp-opts')
 
-							);
+// 							);
 
 
 
 //Set the Help Sidebar for the options page - no sidebar by default										
 
-$args['help_sidebar'] = __('<p>This is the sidebar content, HTML is allowed.</p>', 'nhp-opts');
-
-
-
-
-
-
-
-$sections = array();
+// $args['help_sidebar'] = __('<p>This is the sidebar content, HTML is allowed.</p>', 'nhp-opts');
 
 
 
@@ -296,7 +208,7 @@ $sections[] = array(
 
 						'type' => 'text',
 
-						'title' => 'Contact form e-mail',
+						'title' => 'Contact e-mail',
 
 						'sub_desc' => 'This is the e-mail where you\'ll receive all the messages, appears on footer and schedule forms',
 
@@ -490,98 +402,12 @@ $sections[] = array(
 				);
 
 
-	$tabs = array();
-
-
-
 	global $NHP_Options;
 
-	$NHP_Options = new NHP_Options($sections, $args, $tabs);
+	$NHP_Options = new NHP_Options($sections, $args);
 
-
-
-}//function
+}
 
 add_action('init', 'setup_framework_options', 0);
-
-
-
-/*
-
- * 
-
- * Custom function for the callback referenced above
-
- *
-
- */
-
-function my_custom_field($field, $value){
-
-	print_r($field);
-
-	print_r($value);
-
-
-
-}//function
-
-
-
-/*
-
- * 
-
- * Custom function for the callback validation referenced above
-
- *
-
- */
-
-function validate_callback_function($field, $value, $existing_value){
-
-	
-
-	$error = false;
-
-	$value =  'just testing';
-
-	/*
-
-	do your validation
-
-	
-
-	if(something){
-
-		$value = $value;
-
-	}elseif(somthing else){
-
-		$error = true;
-
-		$value = $existing_value;
-
-		$field['msg'] = 'your custom error message';
-
-	}
-
-	*/
-
-	
-
-	$return['value'] = $value;
-
-	if($error == true){
-
-		$return['error'] = $field;
-
-	}
-
-	return $return;
-
-	
-
-}//function
 
 ?>
