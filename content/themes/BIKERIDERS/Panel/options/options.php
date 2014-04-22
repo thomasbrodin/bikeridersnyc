@@ -1,23 +1,16 @@
 <?php
 if ( ! class_exists('NHP_Options') ){
 	
-	// windows-proof constants: replace backward by forward slashes - thanks to: https://github.com/peterbouwmeester
-	$fslashed_dir = trailingslashit(str_replace('\\','/',dirname(__FILE__)));
-	$fslashed_abs = trailingslashit(str_replace('\\','/',ABSPATH));
-	
 	if(!defined('NHP_OPTIONS_DIR')){
-		define('NHP_OPTIONS_DIR', $fslashed_dir);
+		define('NHP_OPTIONS_DIR', trailingslashit(str_replace('\\','/', __DIR__ )) );
 	}
 	
 	if(!defined('NHP_OPTIONS_URL')){
-		define('NHP_OPTIONS_URL', site_url(str_replace( $fslashed_abs, '', $fslashed_dir )));
+		define('NHP_OPTIONS_URL', content_url().'/themes/BIKERIDERS/Panel/options/');
 	}
 	
 class NHP_Options{
-	
-	protected $framework_url = 'http://leemason.github.com/NHP-Theme-Options-Framework/';
-	protected $framework_version = '1.0.6';
-		
+			
 	public $dir = NHP_OPTIONS_DIR;
 	public $url = NHP_OPTIONS_URL;
 	public $page = '';
