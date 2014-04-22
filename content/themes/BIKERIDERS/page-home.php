@@ -75,7 +75,7 @@ get_header(); ?>
                 <?php } ?>
                 <div class="intro-line"></div>
                 <?php if(isset($bk['topheader_smallertext']) && $bk['topheader_smallertext']) { ?>
-                    <p><?php echo $bk['topheader_smallertext'];?><div class="buttonbook"><a class="appointment fancybox.iframe" href="schedule">BOOK NOW<span class="arrow">→</span></a></div></p>
+                    <p><?php echo $bk['topheader_smallertext'];?><div class="buttonbook"><a class="appointment" href="appointment">BOOK NOW<span class="arrow">→</span></a></div></p>
                 <?php } ?>
              </div> <!-- end title -->
          </div><!-- end columns -->
