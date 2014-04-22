@@ -42,6 +42,7 @@ function remove_menus() {
         remove_menu_page('edit.php?post_type=acf'); //ACF
         remove_menu_page('wpcf7'); // Contact Form
         remove_submenu_page( 'themes.php', 'customize.php'); //Appearance submenus
+        remove_submenu_page( 'themes.php', 'widgets.php' ); //Appearance submenus
         remove_submenu_page( 'themes.php', 'theme-editor.php');
     }       
 }
