@@ -27,3 +27,5 @@ local-config.php
 /shop/themes/brooklyn-copy
 /shop/themes/portland
 /shop/upgrade
+
+/content/plugins/akismet
