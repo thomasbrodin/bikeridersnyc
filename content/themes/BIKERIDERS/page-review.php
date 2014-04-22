@@ -26,16 +26,15 @@ the_post();
                         </div>
                          <div class="ten columns offset-by-two ">
                             <p><span class="highlight">These reviews are from verified customers</span><br>
-                                <span>Take a few minutes and use our survey below to give us your feedback.<br>
-                                <a href="#survey" class="smoothy">Take our survey<span class="arrow">→</span></a></span></p>
+                                <span>Take a few minutes and give us your feedback.<br>
+                                <a href="http://www.yelp.com/biz/bikeriders-brooklyn" target="_blank">Post your review<span class="arrow">→</span></a></span></p>
                         </div>
                     </div>
                 </div>
            </div>
 
-            <div class="single">
-                      <?php the_content();?>
-                      
+            <div class="single review">
+                      <div id="fs-embed-02mzIQXjyr"></div>
             </div>
         </div>
     </div>
@@ -44,18 +43,15 @@ the_post();
             <div class="bg bg3"></div>
     </div>
 
-    <div id="survey">
-        <div class="container">
-            <div class="sixteen columns">
-                <h2><span class="logo"></span>
-                            POST YOUR REVIEW              
-                </h2>
-            </div>
-            <div class="sixteen columns">
-                <?php echo do_shortcode( '[contact-form-7 id="899" title="Survey"]' ); ?>
-            </div>
-        </div> <!-- end container -->      
-    </div> <!-- end survey -->
-
-    
+<script type="text/javascript">
+(function() {(window.$fs || (window.$fs = [])).push([ "embed", {"root":"fs-embed-02mzIQXjyr","host":"bikeridersnyc.fullslate.com","reviews":"all"} ]);
+    if (!window.$fs._isFullSlate) { 
+        var fsscr = document.createElement("script"); 
+        fsscr.type = "text/javascript";fsscr.async = true; 
+        fsscr.src = ["http", (document.location.protocol == "https:" ? "s" : ""), "://bikeridersnyc.fullslate.com/api.js"].join("");
+        var other = document.getElementsByTagName("script")[0]; 
+        other.parentNode.insertBefore(fsscr, other); 
+    }
+})();
+</script>
 <?php get_footer();?>
