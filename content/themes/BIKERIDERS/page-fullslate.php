@@ -21,17 +21,18 @@ global $bk;
                         </h2>
                 </div>
               <div class="single">
+
                     <?php the_content();?>
                     
                     <div id="fs-embed-vvw2IIvtaz"></div>
 
                     <?php $special_title = get_post_meta($post->ID, 'special_title', true);
-                     if ($special_title) : echo '<h6>'.$special_title.'</h6>'; endif; ?>
-                     
+                     if ($special_title) : echo '<h6 class="special">'.$special_title.'</h6>'; endif; ?>
+
                     <p class="agreement">BIKERIDERS Customer Service will confirm your appointment via email within 24 hours. All BIKERIDERS Appointments must be confirmed by email prior to the scheduled appointment time.
                       If you do not receive an email, please contact us at <?php if(isset($bk['email']) && $bk['email'] != '') { ?><a href="mailto:<?php echo $bk['email'];?>"><?php echo encEmail($bk['email']);?></a><?php } ?> 
                       or call at <?php if(isset($bk['phone']) && $bk['phone'] != '') { ?><a href="tel:<?php echo $bk['phone'];?>"><?php echo $bk['phone'];?></a><?php } ?>
-                  </p>
+                    </p>
                </div>
           </div>
     </div>

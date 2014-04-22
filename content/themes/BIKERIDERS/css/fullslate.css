@@ -48,7 +48,7 @@ div.fs-option-summary {
 }
 
 
-.page-template-page-fullslate-php .single h6 {
+.single h6.special {
 	font-family: 'din-medium', sans-serif;
 	font-size: 16px;
 	color: #fff;
@@ -57,7 +57,7 @@ div.fs-option-summary {
 	clear: both;
 }
 
-.page-template-page-fullslate-php .single h4 {
+.single h4 {
 	font-family: 'din-medium', sans-serif;
 	font-size: 21px;
 	color: #de8d23;
