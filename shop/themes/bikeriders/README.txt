@@ -1,12 +1,5 @@
-README for Brooklyn theme
-
-Thank you for taking the time to read this file. Below are some very important notes on how to make changes to the look of your web store.
-
-First, DO NOT, under any circumstances, manually modify any of the files in this folder. You will notice another folder called "custom". On a brand new installation, custom is simply a copy of Brooklyn, and we include it as the best place to make a custom theme if you desire.
-
-The simple reason for this is that the Brooklyn theme may get updated automatically and any changes you make will be lost.
-
-To begin designing a custom theme, use the following directions:
+BIKERIDERS lightspeed theme
+===========================
 
 1. Go to Admin Panel and choose the Themes menu. Under "Manage My Themes", click the "Custom" theme and Apply. This switches Web Store to use it instead of Brooklyn (although at the beginning it's a copy so it will look identical).
 2. At this point, you can make changes to the themes/custom folder as you desire.
