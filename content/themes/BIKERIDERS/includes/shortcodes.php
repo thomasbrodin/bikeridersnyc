@@ -175,19 +175,19 @@ function vp_button($atts, $content=null) {
 	), $atts));
 	$content = filter_shortcode($content);
 	if  ($type == 'bikefit')
-		$encurl = ''. home_url('/appointments/lab/') .'?appointment_type=Bike%20Fitting%20(%24349.99)';
+		$encurl = ''. home_url('/appointments/lab/');
 	elseif($type == 'prefitting')
-		$encurl = ''. home_url('/appointments/lab/') .'?appointment_type=Pre%20Fitting%20(%24424.99)';
+		$encurl = ''. home_url('/appointments/lab/');
 	elseif($type == 'refitting')
-		$encurl = ''. home_url('/appointments/lab/') .'?appointment_type=Refitting%20(Bike%20Fit)%20(%24174.99)';
+		$encurl = ''. home_url('/appointments/lab/');
 	elseif($type == 'cleat')
-		$encurl = ''. home_url('/appointments/lab/') .'?appointment_type=Cleat%20fitting%20(%2474.99)';
+		$encurl = ''. home_url('/appointments/lab/');
 	elseif($type == 'LT')
-		$encurl = ''. home_url('/appointments/lab/') .'?appointment_type=Lactate%20Testing%20(%24224.99)';
+		$encurl = ''. home_url('/appointments/lab/');
 	elseif($type == 'training')
-		$encurl = ''. home_url('/appointments/lab/') .'?appointment_type=On-Bike%20Skills%20Session%20(1%20hr)%20(%24174.99)';
+		$encurl = ''. home_url('/appointments/lab/');
 	elseif($type == 'all')
-		$encurl = ''. home_url('/appointments/lab/').'';
+		$encurl = ''. home_url('/appointments/lab/');
 	else
 		$encurl = '';
 	if($content !== '')
@@ -197,9 +197,9 @@ function vp_button($atts, $content=null) {
 			if($url === '')
 			{
 				if($type === '')	
-				$output = '<a class="appointment fancybox.iframe" href="' . home_url('/appointments/mechanical/') . '"><div class="buttonbook">' . $content . '<span class="arrow">→</span></div></a>';	
+				$output = '<a class="appointment" href="' . home_url('/appointments/mechanical/') . '"><div class="buttonbook">' . $content . '<span class="arrow">→</span></div></a>';	
 				else
-				$output = '<a class="appointment fancybox.iframe" href="' . $encurl . '"><div class="buttonbook">' . $content . '<span class="arrow">→</span></div></a>';
+				$output = '<a class="appointment" href="' . $encurl . '"><div class="buttonbook">' . $content . '<span class="arrow">→</span></div></a>';
 				return $output;
 			}
 			else
@@ -212,9 +212,9 @@ function vp_button($atts, $content=null) {
 		else 
 		{	
 				if($type === '')	
-				$output = '<a class="appointment fancybox.iframe" href="' . home_url('/appointments/mechanical/') . '"><div class="buttonbook" style="background-color: #' . $color . '">' . $content . '<span class="arrow">→</span></div></a>';	
+				$output = '<a class="appointment" href="' . home_url('/appointments/mechanical/') . '"><div class="buttonbook" style="background-color: #' . $color . '">' . $content . '<span class="arrow">→</span></div></a>';	
 				else
-				$output = '<a class="appointment fancybox.iframe" href="' . $encurl . '"><div class="buttonbook" style="background-color: #' . $color . '">' . $content . '<span class="arrow">→</span></div></a>';
+				$output = '<a class="appointment" href="' . $encurl . '"><div class="buttonbook" style="background-color: #' . $color . '">' . $content . '<span class="arrow">→</span></div></a>';
 				return $output;
 	
 		}
