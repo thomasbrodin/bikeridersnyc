@@ -38,7 +38,14 @@ div.fs-booking-choices a:visited {
 	font-size: 1.2em;
 	text-transform: uppercase;
 }
-
+div.fs-location-directions a, 
+div.fs-location-directions a:visited {
+	padding:0;
+	background-image: none;
+	text-indent: 0;
+	color:#fff;
+	background-color: #000
+}
 div.fs-booking-choices a:hover{
 	color:#ddd
 }
