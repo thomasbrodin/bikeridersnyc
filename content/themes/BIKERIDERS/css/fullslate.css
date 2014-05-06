@@ -135,7 +135,8 @@ body .fs-embed a.fs-service-opening {
 .fs-embed .fs-openings {
 	margin-bottom: 20px!important
 }
-.fs-embed .fs-instructions .fs-special {
+
+p.fs-instructions.fs-special {
 	display: none
 }
 
