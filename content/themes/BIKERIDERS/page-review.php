@@ -36,6 +36,12 @@ the_post();
             <div class="single review">
                       <div id="fs-embed-02mzIQXjyr"></div>
             </div>
+            <div class="wrap-back">
+                <a id="back-to-top" href="#top" title="Back to top">
+                    <i class="angle-up"></i>
+                    <span>Back to top</span>
+                </a>
+              </div>
         </div>
     </div>
 
@@ -53,5 +59,11 @@ the_post();
         other.parentNode.insertBefore(fsscr, other); 
     }
 })();
+jQuery(document).ready(function($) {
+    $('#back-to-top').click(function() {
+      $('html, body').animate({scrollTop: 0}, 700);
+      return false;
+    });
+});
 </script>
 <?php get_footer();?>
