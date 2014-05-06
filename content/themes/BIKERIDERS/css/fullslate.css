@@ -142,6 +142,7 @@ p.fs-instructions.fs-special {
 
 .fs-embed .fs-instructions {
 	font-size:0.8em!important;
+	color: gray
 }
 
 .fs-booking-fields textarea{
@@ -152,7 +153,8 @@ p.fs-instructions.fs-special {
 	vertical-align: top!important;
 	text-align: left!important;
 	width: 30%;
-	line-height: 1
+	line-height: 1;
+	color:#000;
 }
 .fs-embed .fs-controls,
 .fs-required-mark-note {
