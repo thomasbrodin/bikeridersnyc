@@ -74,6 +74,12 @@ global $bk;
                       or call at <?php if(isset($bk['phone']) && $bk['phone'] != '') { ?><a href="tel:<?php echo $bk['phone'];?>"><?php echo $bk['phone'];?></a><?php } ?>
                 </p>
             </div>
+             <div class="wrap-back">
+                <a id="back-to-top" href="#top" title="Back to top">
+                    <i class="angle-up"></i>
+                    <span>Back to top</span>
+                </a>
+              </div>
           </div>
     </div>
   </div>
@@ -91,6 +97,12 @@ global $bk;
     other.parentNode.insertBefore(fsscr, other); 
   }
 })();
+jQuery(document).ready(function($) {
+    $('#back-to-top').click(function() {
+      $('html, body').animate({scrollTop: 0}, 700);
+      return false;
+    });
+});
 </script>
 
 <?php get_footer();?>

@@ -132,9 +132,8 @@ p.agreement{
 	float: left;
 	font-size: 13px;
 	color: #000;
-	padding-top:10px;
-	margin-top: 10px;
-	border-top: 1px solid #666;
+	padding-top: 10px;
+	margin-bottom: 0;
 }
 
 p.agreement a {
@@ -444,6 +443,7 @@ input[type="button"] {
 	line-height: normal;
 	padding: 8px 16px;
 	font-family: 'din-medium', sans-serif; 
+	-webkit-appearance: none; 
 }
 
 .button1:hover,
@@ -549,6 +549,43 @@ padding: 6px;
 	margin: 0 auto -255px;
 }
 
+ .wrap-back {
+ 	clear: both
+ }
+
+a#back-to-top {
+  color: #333;
+  border:none;
+  text-decoration: none;
+	display: block;
+	text-align: center;
+}
+
+a#back-to-top span{
+  font-size: 16px;
+  font-family: 'din-black';
+  text-transform: uppercase;
+}
+
+a#back-to-top:hover{
+  color:#de8d23;
+}
+
+i.angle-up {
+  cursor: pointer;
+}
+
+.angle-up:before{
+  display: block;
+  font-family: 'FontAwesome';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 0.5;
+  font-size: 48px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\f106";
+}
 
 /* #Separators
 ================================================== */
@@ -1680,6 +1717,18 @@ text-align: center !important;
 		Just create a "fonts" folder at the root,
 		copy your FontName into code below and remove
 		comment brackets */
+/* font-face
+-------------------------------------------------- */
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('fonts/fontawesome-webfont.eot?v=4.0.3');
+  src: url('fonts/fontawesome-webfont.eot?#iefix&v=4.0.3') format('embedded-opentype'), 
+      url('fonts/fontawesome-webfont.woff?v=4.0.3') format('woff'), 
+      url('fonts/fontawesome-webfont.ttf?v=4.0.3') format('truetype'), 
+      url('fonts/fontawesome-webfont.svg?v=4.0.3#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 
 @font-face {
     font-family: 'din-black';

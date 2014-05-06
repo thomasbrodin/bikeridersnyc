@@ -138,12 +138,14 @@ function vp_slider($atts, $content=null) {
 	$output .= '</ul></div>';
 	$output .= '
 	<script type="text/javascript">
-		jQuery(".flex-' . $id . '").flexslider({
+		(function($) {
+			$(".flex-' . $id . '").flexslider({
 				animation: "fade",
 				slideshowSpeed: 7000,
 				animationSpeed: 1000,
 				slideshow: false,
 			});
+		})(jQuery);
 	</script>';
 	return $output;
 }
@@ -262,15 +264,15 @@ function vp_quote_slider($atts, $content=null) {
 	</div>
     </div>' . PHP_EOL;
     $output .= "<script type='text/javascript'>
-    jQuery().ready(function() {
-    jQuery('#quote-slider-$id').cycle({
-    		fx: 'scrollHorz',
-    		easing: 'easeInOutExpo',
-    		prev: '#quote-nav-left-$id a',
-    		next: '#quote-nav-right-$id a',
-    		timeout: 5000
-    	});
-	});
+	   jQuery(document).ready(function($) {
+	    	$('#quote-slider-$id').cycle({
+	    		fx: 'scrollHorz',
+	    		easing: 'easeInOutExpo',
+	    		prev: '#quote-nav-left-$id a',
+	    		next: '#quote-nav-right-$id a',
+	    		timeout: 5000
+	    	});
+		});
     </script>" . PHP_EOL;
     return $output;
 }

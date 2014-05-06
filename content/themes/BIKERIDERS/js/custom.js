@@ -111,5 +111,4 @@ jQuery(document).ready(function($) {
                   }
                 });
             }
-
 });

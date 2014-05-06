@@ -343,7 +343,24 @@
 			position: absolute;
 			bottom:165px;
 		}
-		
+		div.fs-booking-choices a, 
+		div.fs-booking-choices a:visited{
+			font-size: 0.9em;
+			background-image:none;
+			text-indent: 0
+		}
+		div.fs-option-summary {
+			font-size: 0.8em
+		}
+		div.fs-embed .fs-openings th {
+			padding:10px 0;
+		}
+		.fs-embed .fs-instructions {
+			display: none
+		}
+		.wrap-back {
+ 			display: none
+ 		}
 		.columns .post {
 		margin-bottom: 15px;
 		}

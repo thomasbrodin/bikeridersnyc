@@ -24,8 +24,9 @@ global $bk;
 
                     <?php the_content();?>
                     
-                    <div id="fs-embed-vvw2IIvtaz"></div>
-
+                    <div id="fs-embed-vvw2IIvtaz">
+                     
+                    </div>
                     <?php $special_title = get_post_meta($post->ID, 'special_title', true);
                      if ($special_title) : echo '<h6 class="special">'.$special_title.'</h6>'; endif; ?>
 
@@ -33,13 +34,21 @@ global $bk;
                       If you do not receive an email, please contact us at <?php if(isset($bk['email']) && $bk['email'] != '') { ?><a href="mailto:<?php echo $bk['email'];?>"><?php echo encEmail($bk['email']);?></a><?php } ?> 
                       or call at <?php if(isset($bk['phone']) && $bk['phone'] != '') { ?><a href="tel:<?php echo $bk['phone'];?>"><?php echo $bk['phone'];?></a><?php } ?>
                     </p>
+
                </div>
+               <div class="wrap-back">
+                  <a id="back-to-top" href="#top" title="Back to top">
+                      <i class="angle-up"></i>
+                      <span>Back to top</span>
+                  </a>
+                </div>
           </div>
     </div>
   </div>
   <div class="separator2">
     <div class="bg bg3"></div>
   </div>
+
 
 <script type="text/javascript">
 (function() {
@@ -48,9 +57,16 @@ global $bk;
     var fsscr = document.createElement("script"); 
     fsscr.type = "text/javascript";fsscr.async = true; 
     fsscr.src = ["http", (document.location.protocol == "https:" ? "s" : ""), "://bikeridersnyc.fullslate.com/api.js"].join("");
-    var other = document.getElementsByTagName("script")[0]; other.parentNode.insertBefore(fsscr, other); 
+    var other = document.getElementsByTagName("script")[0]; 
+    other.parentNode.insertBefore(fsscr, other); 
   }
 })();
-
+jQuery(document).ready(function($) {
+    $('#back-to-top').click(function() {
+      $('html, body').animate({scrollTop: 0}, 700);
+      return false;
+    });
+});
 </script>
+
 <?php get_footer();?>

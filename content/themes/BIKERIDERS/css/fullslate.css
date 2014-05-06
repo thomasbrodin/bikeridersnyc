@@ -2,9 +2,6 @@
 	display:none
 }
 
-.fs-embed .fs-instructions {
-	display:none
-}
 .fs-embed .fs-footer {
 	display: none
 }
@@ -138,7 +135,25 @@ body .fs-embed a.fs-service-opening {
 .fs-embed .fs-openings {
 	margin-bottom: 20px!important
 }
+.fs-embed .fs-instructions {
+	font-size:0.8em!important;
+}
+
+.fs-booking-fields textarea{
+	min-height: 100px
+}
 
 .fs-embed form th {
-	vertical-align: top !important
+	vertical-align: top!important;
+	text-align: left!important;
+	width: 30%;
+	line-height: 1
+}
+.fs-embed .fs-controls,
+.fs-required-mark-note {
+	text-align: left!important;
+
+}
+.fs-embed-shell {
+	width: 100%;
 }
