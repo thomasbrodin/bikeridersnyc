@@ -355,12 +355,12 @@
 		div.fs-embed .fs-openings th {
 			padding:10px 0;
 		}
-		.fs-openings .fs-openings-mobile dt{
+		.fs-openings-mobile dt{
 			padding: 5px 0;
 			font-size: 1em;
 			color: #000
 		}
-		.fs-openings .fs-openings-mobile dt em {
+		.fs-openings-mobile dt em {
 			display: none;
 		}
 
