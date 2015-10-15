@@ -29,3 +29,14 @@ local-config.php
 /shop/upgrade
 
 /content/plugins/akismet
+
+/wp
+
+/scheduler
+/shop
+
+/content/plugins
+
+/content/languages
+
+/content/themes/BIKERIDERS/config.codekit
