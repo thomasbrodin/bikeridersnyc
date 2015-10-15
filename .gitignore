@@ -46,3 +46,9 @@ local-config.php
 /content/themes/GS/css/scss/.sass-cache
 
 /content/themes/GS/config.codekit
+
+/wp-config.php
+
+/index.php
+
+/.htaccess

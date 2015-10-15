@@ -1939,7 +1939,7 @@ nav a:hover, nav a:focus {
   display: none;
   position: absolute;
   height: 30px;
-  width: 30px;
+  width: 20px;
   background-color: #000;
   top: 15px;
   z-index: 1400;
@@ -2402,7 +2402,7 @@ footer form {
 
 footer .row:first-child .columns:not(:first-child) {
   border-left: 1px solid #858585;
-  min-height: 150px;
+  min-height: 200px;
   padding-left: 15px; }
 
 footer .social {
@@ -2518,15 +2518,14 @@ ul.list {
   display: block;
   position: relative;
   padding: 0px;
-  margin-bottom: -1px;
-  list-style-type: none; }
+  margin-bottom: -1px; }
 
 ul.float {
   float: left;
-  width: 50%;
-  list-style-type: none; }
+  width: 50%; }
 
 ul.list li {
+  list-style: none;
   padding: 4px 0px 5px 0;
   width: auto;
   border-bottom: 1px solid #ddd; }
@@ -2535,10 +2534,12 @@ ul.float li {
   margin-right: 20px; }
 
 ul.bullet li {
+  list-style: none;
   padding: 4px 0px 5px 21px;
   background: url(../images/list-dot.jpg) no-repeat 1px 13px; }
 
 ul.check li {
+  list-style: none;
   padding: 4px 0px 5px 21px;
   background: url(../images/list-check.png) no-repeat 1px 11px; }
 
@@ -2553,41 +2554,6 @@ ul.check li {
 .page-template-page-appointment-iframe-php p {
   margin-bottom: 4px;
   color: #de8d23; }
-
-/* slideshow brands */
-#slideshow-wrap {
-  float: left;
-  width: 180px;
-  background-color: #000;
-  margin-right: 30px;
-  height: 700px; }
-
-.slideshow {
-  height: 480px; }
-
-#slideshow-wrap a img {
-  padding: 10px 0;
-  max-width: 180px;
-  width: auto;
-  height: auto; }
-
-#prev, #next {
-  background: transparent url(../images/bg_direction_nav.png) no-repeat 0 0;
-  width: 25px;
-  height: 15px;
-  position: relative;
-  display: block;
-  text-indent: -9999px;
-  left: 73px; }
-
-#prev {
-  opacity: 0;
-  margin-top: 115px;
-  margin-bottom: 15px; }
-
-#next {
-  margin-top: 30px;
-  background-position: 0 -15px; }
 
 .post {
   margin-bottom: 15px; }
@@ -2790,22 +2756,18 @@ p.fs-instructions.fs-special {
 .fs-embed-shell {
   width: 100%; }
 
+.admin-bar header {
+  margin-top: 32px !important; }
+
 /* #Media Queries
 ================================================== */
 /* IPAD */
-@media only screen and (min-width: 700px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    width: 90%; }
+
   .ribbon-wrapper-appointment {
     display: none; }
-
-  #slideshow-wrap {
-    width: 130px;
-    margin-right: 25px; }
-
-  #slideshow-wrap a img {
-    max-width: 120px; }
-
-  #next {
-    left: 45px; }
 
   ul.check li {
     margin-bottom: 4px; }
@@ -2816,116 +2778,38 @@ p.fs-instructions.fs-special {
   .featurepost .m_item .m_overlay h2 {
     font-size: 18px !important; }
 
-  #primary-nav a {
-    padding: 0 8px; }
+  #primary-nav ul {
+    margin-top: 17px; }
+    #primary-nav ul li {
+      padding: 0 6px;
+      line-height: 24px;
+      font-size: 14px; }
 
-  #primary-nav .indicator div.item235 {
-    width: 69px;
-    margin-left: 0px; }
+  #title {
+    margin-top: 17px; }
 
-  #primary-nav .indicator div.item294 {
-    margin-left: 90px;
-    width: 116px; }
-
-  #primary-nav .indicator div.item790 {
-    margin-left: 222px; }
-
-  #primary-nav .indicator div.item317 {
-    margin-left: 283px; }
-
-  #primary-nav .indicator div.item238 {
-    margin-left: 352px; }
-
-  #primary-nav .indicator div.item66 {
-    margin-left: 412px;
-    width: 42px; }
-
-  #primary-nav .indicator div.item767 {
-    margin-left: 473px;
-    width: 42px; }
-
-  .page-template-page-appointment-php .single .eight.columns {
-    width: 332px;
-    min-height: 265px; }
-
-  .page-template-page-appointment-iframe-php h2.pickup {
-    margin-top: 95px;
-    font-size: 28px !important; }
-
-  .page-template-page-service-iframe-php h2.lab {
-    margin-top: 110px;
-    font-size: 28px !important; }
-
-  .page-template-page-appointment-iframe-php p.agreement {
-    font-size: 12px;
-    border-top: none;
-    padding-top: 0; }
-
-  .page-template-page-appointment-iframe-php .highlight {
-    font-size: 18px;
-    margin-top: 0px; }
-
-  .page-template-page-service-iframe-php p.agreement {
-    font-size: 12px;
-    border-top: none;
-    padding-top: 0; }
-
-  .page-template-page-service-iframe-php .highlight {
-    font-size: 18px;
-    margin-top: 0px; }
-
-  .page-template-page-appointment-iframe-php .headings {
-    margin: 10px 0; }
-
-  .page-template-page-service-iframe-php .headings {
-    margin: 10px 0; }
+  #tagline {
+    display: none; }
 
   .strava {
     display: none; }
 
+  #secondary-nav {
+    float: right;
+    margin-top: -20px; }
+    #secondary-nav ul li {
+      font-size: 14px;
+      padding: 0 4px;
+      line-height: 18px; }
+
   footer input#mce-EMAIL {
-    width: 175px; }
+    width: 130px; }
 
   footer input#mce-MMERGE4 {
-    width: 55px; }
-
-  footer .one-third {
-    padding-left: 9px;
-    padding-right: 9px; } }
-/* IFRAME IPAD */
-@media only screen and (min-width: 568px) and (max-width: 767px) {
-  .ribbon-wrapper-scheduling {
-    display: none; }
-
-  #slideshow-wrap {
-    width: 100px;
-    margin-right: 20px; }
-
-  #slideshow-wrap a img {
-    max-width: 90px; }
-
-  #next {
-    left: 38px; }
-
-  #prev {
-    opacity: 0;
-    margin-top: 110px;
-    margin-bottom: 20px;
-    left: 38px; }
-
-  #prev {
-    opacity: 1; }
-
-  .page-template-page-service-iframe-php h2.lab {
-    margin-top: 100px;
-    font-size: 22px !important; }
-
-  ul.check li {
-    margin-bottom: 4px; } }
+    width: 65px; } }
 /* IPHONE */
 @media only screen and (min-width: 320px) and (max-width: 568px) {
   header {
-    position: absolute;
     height: 80px; }
 
   .ribbon-wrapper-appointment {
@@ -2934,35 +2818,30 @@ p.fs-instructions.fs-special {
   .ribbon-wrapper-scheduling {
     display: none; }
 
-  nav#primary-nav, nav#secondary-nav {
+  nav#primary-nav,
+  nav#secondary-nav {
     display: none; }
 
-  .page-template-page-service-php #tagline p, .page-template-page-about-php #tagline p, .page-template-page-team-php #tagline p {
+  .page-template-page-service-php #tagline p,
+  .page-template-page-about-php #tagline p,
+  .page-template-page-team-php #tagline p {
     border-bottom: none; }
-
-  #slideshow-wrap {
-    display: none; }
 
   .strava {
     display: none; }
 
   #tagline {
-    margin-top: 45px; }
+    padding-right: 4px; }
     #tagline p {
       width: 100%;
-      text-align: center;
-      margin-left: 10px; }
+      text-align: right; }
 
   #title {
-    width: 100%;
-    position: absolute;
-    text-align: center;
-    margin: 15px auto 0;
-    float: none; }
-
-  h1#title a {
-    pointer-events: none;
-    cursor: default; }
+    text-align: right;
+    margin-top: 15px; }
+    #title a span {
+      letter-spacing: 3pt;
+      font-size: 24px; }
 
   #mobile-open {
     display: block; }
@@ -3057,28 +2936,6 @@ p.fs-instructions.fs-special {
   .headings {
     margin-top: 40px; }
 
-  .page-template-page-appointment-iframe-php .highlight {
-    margin-top: 40px; }
-
-  .page-template-page-appointment-iframe-php p.agreement, .page-template-page-service-iframe-php p.agreement {
-    bottom: 0;
-    position: absolute;
-    height: 145px;
-    border-top: 1px solid #000;
-    padding-top: 10px; }
-
-  .page-template-page-appointment-iframe-php ul.check {
-    margin-bottom: 12px; }
-
-  .page-template-page-appointment-iframe-php ul.check li {
-    padding: 4px 0px 5px 21px;
-    margin-bottom: 12px;
-    font-size: 14px; }
-
-  .page-template-page-appointment-iframe-php p.homefee, .page-template-page-service-iframe-php p.homefee {
-    position: absolute;
-    bottom: 165px; }
-
   div.fs-booking-choices a,
   div.fs-booking-choices a:visited {
     font-size: 0.9em;
@@ -3123,40 +2980,29 @@ p.fs-instructions.fs-special {
   h4.footer {
     padding-bottom: 10px; }
 
-  footer .columns .none {
-    display: none; }
+  footer .copyright p {
+    text-align: center !important;
+    line-height: 20px;
+    font-size: 14px; }
+  footer .row:first-child .columns:not(:last-child) {
+    border-left: none; }
+  footer .row:first-child .columns.none {
+    display: none !important; }
+  footer .row:first-child .columns.three, footer .row:first-child .columns.two {
+    width: 50%;
+    padding-left: 0 !important; }
 
   footer form {
     height: 55px; }
 
   footer input#mce-EMAIL {
-    width: 120px; }
+    width: 140px; }
 
   footer input#mce-MMERGE4 {
-    width: 55px; }
+    width: 65px; }
 
   footer #signup p {
-    display: none; }
-
-  footer p {
-    margin-bottom: 5px; }
-
-  footer .one-third {
-    padding-top: 10px;
-    min-height: 90px; }
-
-  footer .copyright {
-    margin: 25px auto 0; }
-
-  footer .copyright a {
-    margin-right: 20px; } }
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
-  .page-template-page-appointment-iframe-php #tagline p, .page-template-page-service-iframe-php #tagline p {
-    margin-top: 45px; }
-
-  .page-template-page-appointment-iframe-php #mobile-open, .page-template-page-service-iframe-php #mobile-open {
-    top: 21px;
-    margin-left: 12px; } }
+    display: none; } }
 @media only screen and (min-width: 1100px) {
   .separator1 .bg, #intro .bg1 {
     background-attachment: fixed !important; } }

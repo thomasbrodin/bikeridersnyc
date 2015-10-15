@@ -7,7 +7,7 @@
 					<div class="row">
 
 						<div class="five columns">
-							<h4 class="footer">Bikeriders Update</h3>
+							<h4 class="footer">Gruppo Stelvio Update</h3>
 								 <!-- Begin MailChimp Signup Form -->
 									<div id="signup">
 										<form action="http://bikeridersnyc.us3.list-manage.com/subscribe/post?u=9dfa7266bb43e2f4dac1ace05&amp;id=9d86a6955b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
@@ -39,7 +39,7 @@
 
 						</div> <!-- end menu footer -->
 
-						<div class="two columns">
+						<div class="two columns none">
 									 <h4 class="footer">More Info</h4>
 								 <?php wp_nav_menu( array(
 																				'theme_location' => 'footer-menu',
