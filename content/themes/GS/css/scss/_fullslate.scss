@@ -1,0 +1,181 @@
+.fs-embed .fs-button {
+	display:none
+}
+
+.fs-embed .fs-footer {
+	display: none
+}
+
+div.fs-booking-choices {
+	min-height: 400px;
+	background:#000;
+	color: #fff;
+	padding: 1.2em 2em;
+}
+
+div.fs-booking-choices h3{
+	color: #fff;
+	border-bottom: 1px solid #fff;
+	margin-bottom: 20px;
+	margin-top: 0;
+	text-transform: uppercase;
+	letter-spacing: 0.02em;
+}
+
+div.fs-booking-choices a,
+div.fs-booking-choices a:visited {
+	color: #000;
+	background-color: #fff;
+	padding: .5em .8em;
+	display: inline-block;
+	text-decoration: none;
+	background-image: url(../images/book-arrow.jpg);
+	background-repeat: no-repeat;
+	background-position: 5px 50%;
+	text-indent: 20px;
+	margin: 0 10px 10px 0;
+	font-size: 1.2em;
+	text-transform: uppercase;
+	font-family: 'proxima-nova';
+	font-weight: 400;
+}
+div.fs-location-directions a,
+div.fs-location-directions a:visited {
+	padding:0;
+	background-image: none;
+	text-indent: 0;
+	color:#fff;
+	background-color: #000
+}
+div.fs-booking-choices a:hover{
+	color:#ddd
+}
+
+div.fs-option-summary {
+	padding: 0 0 30px;
+}
+
+.fs-embed .fs-booking-choices ul ul, .fs-embed .fs-product-choices ul ul {
+	margin-left: 0!important;
+}
+.page-content h6.special {
+	font-family: "proxima-nova";
+	font-weight: 400;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+	font-size: 16px;
+	color: #fff;
+	background-color: #de8d23;
+	padding: 1em;
+	clear: both;
+}
+
+.page-content h4 {
+	font-family: "proxima-nova";
+	font-weight: 400;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+	font-size: 24px;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+	color: #de8d23;
+	line-height: 30px;
+}
+
+.fs-primary-description {
+	padding:1em 0;
+}
+
+.fs-embed .fs-booking-state th {
+	line-height: 2em;
+	font-size: 1.1em;
+	vertical-align: text-top!important;
+}
+
+span.fs-selected-value {
+	font-family: "proxima-nova";
+	font-weight: 400;
+	font-size: 16px;
+	color: #000;
+	background-color: #ddd;
+	padding: .3em .5em;
+	clear: both;
+}
+
+.fs-embed .fs-openings td.fs-openings-nav {
+	padding:0 1em !important;
+	border: none !important;
+	vertical-align: middle!important
+}
+.fs-embed span.fs-openings-prev,
+.fs-embed span.fs-openings-next {
+	background-position: 0!important;
+}
+
+.fs-embed .fs-openings-next,
+.fs-embed .fs-openings-prev {
+	width :30px !important;
+	height:50px !important;
+}
+
+.fs-embed .fs-openings-prev {
+	background-image: url(../images/arrow-left.png)!important;
+}
+
+.fs-embed .fs-openings-next{
+	background-image: url(../images/arrow-right.png)!important;
+}
+
+.fs-embed .fs-openings th {
+	background: transparent !important;
+	border:1px solid #000 !important;
+	padding: .5em .5em;
+}
+
+.fs-embed .fs-openings td, .fs-embed .fs-openings th {
+	border:1px solid #000 !important;
+}
+
+body .fs-embed a.fs-service-opening {
+	color: #fff;
+	background-color: #000;
+	padding: .3em .5em;
+	display: inline-block;
+	text-decoration: none;
+}
+.fs-embed .fs-openings td {
+	min-height: 80px
+}
+
+.fs-embed .fs-openings {
+	margin-bottom: 20px!important
+}
+
+p.fs-instructions.fs-special {
+	display: none
+}
+
+.fs-embed .fs-instructions {
+	font-size:0.8em!important;
+	color: gray
+}
+
+.fs-booking-fields textarea{
+	min-height: 100px
+}
+
+.fs-embed form th {
+	vertical-align: top!important;
+	text-align: left!important;
+	width: 30%;
+	line-height: 1;
+	color:#000;
+}
+.fs-embed .fs-controls,
+.fs-required-mark-note {
+	text-align: left!important;
+
+}
+.fs-embed-shell {
+	width: 100%;
+}
