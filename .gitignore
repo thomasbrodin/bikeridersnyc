@@ -40,3 +40,9 @@ local-config.php
 /content/languages
 
 /content/themes/BIKERIDERS/config.codekit
+
+/content/themes/GS/.codekit-cache
+
+/content/themes/GS/css/scss/.sass-cache
+
+/content/themes/GS/config.codekit
