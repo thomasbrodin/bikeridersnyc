@@ -1,3 +1,9 @@
+$headerBg:#1E1E20;
+$darkGrey:#2A2C2B;
+$Grey:#7c7c7c;
+$lightGrey:#9F9F9F;
+$redColor: #DC3522;
+
 /* Table of Content
 ==================================================
 	#Typography
@@ -21,7 +27,7 @@ h1, h2, h3 {
 }
 
 h1 {
-	color: #000;
+	color: $darkGrey;
 	font-size: 120px;
 	 font-weight: 700;
 	text-transform: uppercase;
@@ -40,7 +46,7 @@ h1.small {
 
 h2 {
 	font-size: 40px;
-	color: #000;
+	color: $darkGrey;
 	font-weight: 700;
 	text-transform: uppercase;
 	letter-spacing: 0.02em;
@@ -54,7 +60,7 @@ h3 {
 	text-transform: uppercase;
 	letter-spacing: 0.02em;
 	font-size: 24px;
-	color: grey;
+	color: $Grey;
 	padding-bottom: 30px;
 }
 
@@ -62,7 +68,7 @@ h4 {
 	font-family: "proxima-nova";
 	font-weight: 400;
 	font-size: 18px;
-	color: grey;
+	color: $darkGrey;
 }
 
 h5 {
@@ -76,14 +82,14 @@ p, body {
 	font-family: "ff-tisa-sans-web-pro";
 	font-size: 16px;
 	line-height: 23px;
-	color: grey;
+	color: $Grey;
 }
 
 a {
-	color:#000;
+	color:$darkGrey;
 	&:hover {
 		text-decoration: none;
-		color:#808080;
+		color:$Grey;
 	}
 }
 p.schedule{
@@ -93,29 +99,29 @@ p.schedule{
 p.location {
 	float: left;
 	font-size:13px;
-	color: #000!important;
+	color: $darkGrey!important;
 	margin-bottom:10px;
 }
 p.location a {
-	color: #de8d23;
+	color: $redColor;
 	font-size:14px;
 }
 
 p.agreement{
 	float: left;
 	font-size: 13px;
-	color: #000;
+	color: $darkGrey;
 	padding-top: 10px;
 	margin-bottom: 0;
 }
 
 p.agreement a {
-	color: #de8d23;
+	color: $redColor;
 }
 
 .highlight {
 	font-size: 24px;
-	color: #de8d23;
+	color: $redColor;
 	line-height: 30px;
 }
 
@@ -156,7 +162,7 @@ p.agreement a {
 }
 
 span.homefee{
-	color:grey;
+	color:$Grey;
 }
 
 .dark-bg p, .dark-bg {
@@ -242,7 +248,7 @@ a .arrow {
 }
 
 #review-banner{
-	background: #000;
+	background: $darkGrey;
 	padding: 0;
 	margin-bottom: 25px;
 	z-index: 1;
@@ -259,7 +265,7 @@ a .arrow {
 	text-transform: uppercase;
 	text-decoration: none;
 	padding: 5px 10px;
-	background: #de8d23;
+	background: $redColor;
 	margin-top: 9px;
 	display: inline-block;
 }
@@ -277,7 +283,7 @@ a .arrow {
 }
 
 p.quote {
-	color: grey;
+	color: $Grey;
 	font-size: 26px;
 	margin: 0;
 	line-height: 30px;
@@ -285,7 +291,7 @@ p.quote {
 }
 
 p.quoter {
-		color: grey;
+		color: $Grey;
 		left: 0;
 		text-transform: uppercase;
 		top: 100px;
@@ -331,7 +337,7 @@ p.quoter {
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {
-	background: #000;
+	background: $darkGrey;
 	border: 0;
 	color: #fff;
 	display: inline-block;
@@ -352,8 +358,8 @@ input[type="button"] {
 input[type="submit"]:hover,
 input[type="reset"]:hover,
 input[type="button"]:hover {
-	color: #3a3a3a;
-	background: #e8e8e8;
+	color: $darkGrey;
+	background: $lightGrey;
 	border: 0;
 }
 
@@ -361,8 +367,8 @@ input[type="button"]:hover {
 input[type="submit"]:active,
 input[type="reset"]:active,
 input[type="button"]:active {
-	color: #3a3a3a;
-	background: #e8e8e8;
+	color: $darkGrey;
+	background: $lightGrey;
 	border: 0;
 }
 
@@ -371,7 +377,7 @@ input[type="button"]:active {
 }
 
 .buttonbook {
-	background: #000;
+	background: $darkGrey;
 	border: 0;
 	color: #fff;
 	display: inline-block;
@@ -388,8 +394,8 @@ input[type="button"]:active {
 }
 
 .buttonbook:hover {
-	color: #3a3a3a;
-	background: #e8e8e8;
+	color: $darkGrey;
+	background: $lightGrey;
 	border: 0;
 }
 
@@ -409,14 +415,14 @@ input[type="text"],
 input[type="password"],
 input[type="email"],
 textarea {
-	color:#000;
-	border: 1px solid #000;
+	color:$darkGrey;
+	border: 1px solid $darkGrey;
 }
 
 select {
-color: grey;
+color: $lightGrey;
 margin-bottom: 5px;
-border: 1px solid #000;
+border: 1px solid $darkGrey;
 background: #FFF url('../images/select.png') no-repeat right 0;
 -webkit-appearance: none;
 border-radius: 0;
@@ -471,7 +477,7 @@ a#back-to-top span{
 }
 
 a#back-to-top:hover{
-	color:#de8d23;
+	color:$redColor;
 }
 
 i.angle-up {
@@ -575,7 +581,7 @@ p.separator {
 ================================================== */
 
 header {
-	background: #000;
+	background: $headerBg;
 	width: 100%;
 	position: fixed;
 	z-index: 1000;
@@ -607,7 +613,7 @@ header {
 		letter-spacing: 4pt;
 		}
 		&:hover {
-			color:#de8d23;
+			color:$redColor;
 		}
 	}
 }
@@ -626,7 +632,7 @@ nav .current_page_item a,
 nav .current_page_item a:visited,
 nav .current_menu_item a,
 nav .current_menu_item a:visited{
-	color: #de8d23;
+	color: $redColor;
 }
 
 nav a:visited {
@@ -634,7 +640,7 @@ nav a:visited {
 }
 
 nav a:hover,nav a:focus {
-	color: #de8d23;
+	color: $redColor;
 	-webkit-transition: color 500ms ease 0s;
 	-moz-transition: color 500ms ease 0s;
 	-ms-transition: color 500ms ease 0s;
@@ -667,7 +673,7 @@ nav a:hover,nav a:focus {
 
 #primary-nav .indicator {
 	div {
-		background: none repeat scroll 0 0 #de8d23;
+		background: none repeat scroll 0 0 $redColor;
 		top: 0px;
 		left:0;
 		height: 8px;
@@ -708,7 +714,7 @@ nav a:hover,nav a:focus {
 			font-weight: 400;
 			text-transform: uppercase;
 			letter-spacing: 0.02em;
-			color:#9F9F9F;
+			color:$lightGrey;
 		}
 	}
 }
@@ -721,7 +727,7 @@ nav a:hover,nav a:focus {
 #secondary-nav .indicator {
 		div {
 		height: 5px;
-		background: #000;
+		background: $headerBg;
 		position: fixed;
 		top:85px;
 		left:0;
@@ -749,14 +755,14 @@ nav a:hover,nav a:focus {
 	margin:0;
 	letter-spacing: 0.08em;
 	text-transform: uppercase;
-	color: #9F9F9F;
+	color: $lightGrey;
 	display: inline-block;
 }
 
 .page-template-page-service-php #tagline p,
 .page-template-page-about-php #tagline p,
 .page-template-page-team-php #tagline p {
-	border-bottom: 5px solid #000;
+	border-bottom: 5px solid $headerBg;
 	padding-bottom: 8px;
 }
 
@@ -854,7 +860,7 @@ nav ul, nav ol {
 }
 
 #mobile-nav ul li.current-menu-item a {
-	border-left: 4px solid #de8d23;
+	border-left: 4px solid $redColor;
 }
 #mobile-nav ul li ul li a{
 	text-transform: none;
@@ -967,7 +973,7 @@ span.caption {
 .title p {
 	font-size: 24px;
 	line-height: 30px;
-	color: grey;
+	color: $Grey;
 	position: relative;
 	z-index: 150;
 }
@@ -1105,7 +1111,7 @@ img.scale-with-grid {
 	left: -9px;
 	top: 25px;
 	width: 170px;
-	background-color: #de8d23;
+	background-color: $redColor;
 	color: #fff;
 }
 
@@ -1141,7 +1147,7 @@ img.scale-with-grid {
 	left: -45px;
 	top: 45px;
 	width: 445px;
-	background-color: #de8d23;
+	background-color: $redColor;
 	color: #fff;
 	height: 40px;
 }
@@ -1190,7 +1196,7 @@ img.scale-with-grid {
 		left: -85px;
 	top: -30px;
 	width: 260px;
-	background-color: #de8d23;
+	background-color: $redColor;
 	color: #fff;
 	height: 120px;
 }
@@ -1290,10 +1296,10 @@ footer #signup p{
 	margin-bottom: 0;
 }
 footer input[type="submit"] {
-	background: #e8e8e8;
+	background: $lightGrey;
 	border: none;
 	padding: 8px;
-	color: #464c5b;
+	color: white;
 	display: inline-block;
 	font-family: 'proxima-nova', sans-serif;
 	font-weight: 400;
@@ -1303,8 +1309,8 @@ footer input[type="submit"] {
 }
 
 footer input[type="submit"]:hover{
-	color: #a69153;
-	background: transparent;
+	background: $darkGrey;
+	color: $lightGrey;
 	border: 0;
 }
 footer form{
@@ -1391,7 +1397,7 @@ footer a,footer a:visited {
 }
 
 footer a:hover {
-	color: #de8d23;
+	color: $redColor;
 }
 
 
@@ -1503,7 +1509,7 @@ ul.check li {
 
 .page-template-page-appointment-iframe-php p {
 	margin-bottom: 4px;
-	color: #de8d23;
+	color: $redColor;
 }
 
 .post {

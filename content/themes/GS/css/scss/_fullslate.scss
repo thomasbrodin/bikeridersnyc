@@ -8,7 +8,7 @@
 
 div.fs-booking-choices {
 	min-height: 400px;
-	background:#000;
+	background:$darkGrey;
 	color: #fff;
 	padding: 1.2em 2em;
 }
@@ -24,8 +24,8 @@ div.fs-booking-choices h3{
 
 div.fs-booking-choices a,
 div.fs-booking-choices a:visited {
-	color: #000;
-	background-color: #fff;
+	color: black;
+	background-color: white;
 	padding: .5em .8em;
 	display: inline-block;
 	text-decoration: none;
@@ -44,11 +44,11 @@ div.fs-location-directions a:visited {
 	padding:0;
 	background-image: none;
 	text-indent: 0;
-	color:#fff;
-	background-color: #000
+	color:$lightGrey;
+	background-color:$darkGrey
 }
 div.fs-booking-choices a:hover{
-	color:#ddd
+	color:$lightGrey;
 }
 
 div.fs-option-summary {
@@ -65,7 +65,7 @@ div.fs-option-summary {
 	text-transform: uppercase;
 	font-size: 16px;
 	color: #fff;
-	background-color: #de8d23;
+	background-color: $redColor;
 	padding: 1em;
 	clear: both;
 }
@@ -78,7 +78,7 @@ div.fs-option-summary {
 	font-size: 24px;
 	letter-spacing: 0.02em;
 	text-transform: uppercase;
-	color: #de8d23;
+	color: $redColor;
 	line-height: 30px;
 }
 

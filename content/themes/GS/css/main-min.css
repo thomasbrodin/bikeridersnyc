@@ -1299,7 +1299,7 @@ h1, h2, h3 {
   font-family: "proxima-nova"; }
 
 h1 {
-  color: #000;
+  color: #2A2C2B;
   font-size: 120px;
   font-weight: 700;
   text-transform: uppercase;
@@ -1316,7 +1316,7 @@ h1.small {
 
 h2 {
   font-size: 40px;
-  color: #000;
+  color: #2A2C2B;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.02em;
@@ -1329,14 +1329,14 @@ h3 {
   text-transform: uppercase;
   letter-spacing: 0.02em;
   font-size: 24px;
-  color: grey;
+  color: #7c7c7c;
   padding-bottom: 30px; }
 
 h4 {
   font-family: "proxima-nova";
   font-weight: 400;
   font-size: 18px;
-  color: grey; }
+  color: #2A2C2B; }
 
 h5 {
   font-family: "proxima-nova";
@@ -1348,13 +1348,13 @@ p, body {
   font-family: "ff-tisa-sans-web-pro";
   font-size: 16px;
   line-height: 23px;
-  color: grey; }
+  color: #7c7c7c; }
 
 a {
-  color: #000; }
+  color: #2A2C2B; }
   a:hover {
     text-decoration: none;
-    color: #808080; }
+    color: #7c7c7c; }
 
 p.schedule {
   float: left;
@@ -1363,26 +1363,26 @@ p.schedule {
 p.location {
   float: left;
   font-size: 13px;
-  color: #000 !important;
+  color: #2A2C2B !important;
   margin-bottom: 10px; }
 
 p.location a {
-  color: #de8d23;
+  color: #DC3522;
   font-size: 14px; }
 
 p.agreement {
   float: left;
   font-size: 13px;
-  color: #000;
+  color: #2A2C2B;
   padding-top: 10px;
   margin-bottom: 0; }
 
 p.agreement a {
-  color: #de8d23; }
+  color: #DC3522; }
 
 .highlight {
   font-size: 24px;
-  color: #de8d23;
+  color: #DC3522;
   line-height: 30px; }
 
 .page h2 {
@@ -1414,7 +1414,7 @@ p.agreement a {
   margin-bottom: 15px; }
 
 span.homefee {
-  color: grey; }
+  color: #7c7c7c; }
 
 .dark-bg p, .dark-bg {
   color: #f9f9f9; }
@@ -1487,7 +1487,7 @@ a .arrow {
   margin-right: 10px; }
 
 #review-banner {
-  background: #000;
+  background: #2A2C2B;
   padding: 0;
   margin-bottom: 25px;
   z-index: 1;
@@ -1502,7 +1502,7 @@ a .arrow {
   text-transform: uppercase;
   text-decoration: none;
   padding: 5px 10px;
-  background: #de8d23;
+  background: #DC3522;
   margin-top: 9px;
   display: inline-block; }
 
@@ -1518,14 +1518,14 @@ a .arrow {
   width: 100%; }
 
 p.quote {
-  color: grey;
+  color: #7c7c7c;
   font-size: 26px;
   margin: 0;
   line-height: 30px;
   height: 125px; }
 
 p.quoter {
-  color: grey;
+  color: #7c7c7c;
   left: 0;
   text-transform: uppercase;
   top: 100px;
@@ -1565,7 +1565,7 @@ p.quoter {
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {
-  background: #000;
+  background: #2A2C2B;
   border: 0;
   color: #fff;
   display: inline-block;
@@ -1585,23 +1585,23 @@ input[type="button"] {
 input[type="submit"]:hover,
 input[type="reset"]:hover,
 input[type="button"]:hover {
-  color: #3a3a3a;
-  background: #e8e8e8;
+  color: #2A2C2B;
+  background: #9F9F9F;
   border: 0; }
 
 .button1:active
 input[type="submit"]:active,
 input[type="reset"]:active,
 input[type="button"]:active {
-  color: #3a3a3a;
-  background: #e8e8e8;
+  color: #2A2C2B;
+  background: #9F9F9F;
   border: 0; }
 
 .signup .button1 {
   color: #3a3a3a; }
 
 .buttonbook {
-  background: #000;
+  background: #2A2C2B;
   border: 0;
   color: #fff;
   display: inline-block;
@@ -1617,8 +1617,8 @@ input[type="button"]:active {
   margin-bottom: 5px; }
 
 .buttonbook:hover {
-  color: #3a3a3a;
-  background: #e8e8e8;
+  color: #2A2C2B;
+  background: #9F9F9F;
   border: 0; }
 
 .buttonbook a {
@@ -1635,13 +1635,13 @@ input[type="text"],
 input[type="password"],
 input[type="email"],
 textarea {
-  color: #000;
-  border: 1px solid #000; }
+  color: #2A2C2B;
+  border: 1px solid #2A2C2B; }
 
 select {
-  color: grey;
+  color: #9F9F9F;
   margin-bottom: 5px;
-  border: 1px solid #000;
+  border: 1px solid #2A2C2B;
   background: #FFF url("../images/select.png") no-repeat right 0;
   -webkit-appearance: none;
   border-radius: 0;
@@ -1687,7 +1687,7 @@ a#back-to-top span {
   text-transform: uppercase; }
 
 a#back-to-top:hover {
-  color: #de8d23; }
+  color: #DC3522; }
 
 i.angle-up {
   cursor: pointer; }
@@ -1773,7 +1773,7 @@ p.separator {
 /* HEADER & NAV
 ================================================== */
 header {
-  background: #000;
+  background: #1E1E20;
   width: 100%;
   position: fixed;
   z-index: 1000;
@@ -1802,7 +1802,7 @@ header {
       font-weight: 300;
       letter-spacing: 4pt; }
     #title a:hover {
-      color: #de8d23; }
+      color: #DC3522; }
 
 nav ul li {
   display: inline-block; }
@@ -1816,13 +1816,13 @@ nav .current_page_item a,
 nav .current_page_item a:visited,
 nav .current_menu_item a,
 nav .current_menu_item a:visited {
-  color: #de8d23; }
+  color: #DC3522; }
 
 nav a:visited {
   color: #fff; }
 
 nav a:hover, nav a:focus {
-  color: #de8d23;
+  color: #DC3522;
   -webkit-transition: color 500ms ease 0s;
   -moz-transition: color 500ms ease 0s;
   -ms-transition: color 500ms ease 0s;
@@ -1849,7 +1849,7 @@ nav a:hover, nav a:focus {
   letter-spacing: 0.04em; }
 
 #primary-nav .indicator div {
-  background: none repeat scroll 0 0 #de8d23;
+  background: none repeat scroll 0 0 #DC3522;
   top: 0px;
   left: 0;
   height: 8px;
@@ -1893,7 +1893,7 @@ nav a:hover, nav a:focus {
 
 #secondary-nav .indicator div {
   height: 5px;
-  background: #000;
+  background: #1E1E20;
   position: fixed;
   top: 85px;
   left: 0;
@@ -1925,7 +1925,7 @@ nav a:hover, nav a:focus {
 .page-template-page-service-php #tagline p,
 .page-template-page-about-php #tagline p,
 .page-template-page-team-php #tagline p {
-  border-bottom: 5px solid #000;
+  border-bottom: 5px solid #1E1E20;
   padding-bottom: 8px; }
 
 /* MOBILE NAV */
@@ -2005,7 +2005,7 @@ nav ul, nav ol {
   border-left: 4px solid #fff; }
 
 #mobile-nav ul li.current-menu-item a {
-  border-left: 4px solid #de8d23; }
+  border-left: 4px solid #DC3522; }
 
 #mobile-nav ul li ul li a {
   text-transform: none;
@@ -2102,7 +2102,7 @@ span.caption {
 .title p {
   font-size: 24px;
   line-height: 30px;
-  color: grey;
+  color: #7c7c7c;
   position: relative;
   z-index: 150; }
 
@@ -2221,7 +2221,7 @@ img.scale-with-grid {
   left: -9px;
   top: 25px;
   width: 170px;
-  background-color: #de8d23;
+  background-color: #DC3522;
   color: #fff; }
 
 .ribbon-home:before, .ribbon-home:after {
@@ -2253,7 +2253,7 @@ img.scale-with-grid {
   left: -45px;
   top: 45px;
   width: 445px;
-  background-color: #de8d23;
+  background-color: #DC3522;
   color: #fff;
   height: 40px; }
 
@@ -2297,7 +2297,7 @@ img.scale-with-grid {
   left: -85px;
   top: -30px;
   width: 260px;
-  background-color: #de8d23;
+  background-color: #DC3522;
   color: #fff;
   height: 120px; }
 
@@ -2387,10 +2387,10 @@ footer #signup p {
   margin-bottom: 0; }
 
 footer input[type="submit"] {
-  background: #e8e8e8;
+  background: #9F9F9F;
   border: none;
   padding: 8px;
-  color: #464c5b;
+  color: white;
   display: inline-block;
   font-family: 'proxima-nova', sans-serif;
   font-weight: 400;
@@ -2399,8 +2399,8 @@ footer input[type="submit"] {
   border-radius: 0; }
 
 footer input[type="submit"]:hover {
-  color: #a69153;
-  background: transparent;
+  background: #2A2C2B;
+  color: #9F9F9F;
   border: 0; }
 
 footer form {
@@ -2467,7 +2467,7 @@ footer a, footer a:visited {
   color: #fff; }
 
 footer a:hover {
-  color: #de8d23; }
+  color: #DC3522; }
 
 /* #Wordpress related css
 ================================================== */
@@ -2562,7 +2562,7 @@ ul.check li {
 
 .page-template-page-appointment-iframe-php p {
   margin-bottom: 4px;
-  color: #de8d23; }
+  color: #DC3522; }
 
 .post {
   margin-bottom: 15px; }
@@ -2615,7 +2615,7 @@ ul.check li {
 
 div.fs-booking-choices {
   min-height: 400px;
-  background: #000;
+  background: #2A2C2B;
   color: #fff;
   padding: 1.2em 2em; }
 
@@ -2629,8 +2629,8 @@ div.fs-booking-choices h3 {
 
 div.fs-booking-choices a,
 div.fs-booking-choices a:visited {
-  color: #000;
-  background-color: #fff;
+  color: black;
+  background-color: white;
   padding: .5em .8em;
   display: inline-block;
   text-decoration: none;
@@ -2649,11 +2649,11 @@ div.fs-location-directions a:visited {
   padding: 0;
   background-image: none;
   text-indent: 0;
-  color: #fff;
-  background-color: #000; }
+  color: #9F9F9F;
+  background-color: #2A2C2B; }
 
 div.fs-booking-choices a:hover {
-  color: #ddd; }
+  color: #9F9F9F; }
 
 div.fs-option-summary {
   padding: 0 0 30px; }
@@ -2668,7 +2668,7 @@ div.fs-option-summary {
   text-transform: uppercase;
   font-size: 16px;
   color: #fff;
-  background-color: #de8d23;
+  background-color: #DC3522;
   padding: 1em;
   clear: both; }
 
@@ -2680,7 +2680,7 @@ div.fs-option-summary {
   font-size: 24px;
   letter-spacing: 0.02em;
   text-transform: uppercase;
-  color: #de8d23;
+  color: #DC3522;
   line-height: 30px; }
 
 .fs-primary-description {
