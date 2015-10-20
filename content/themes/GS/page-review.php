@@ -26,7 +26,7 @@ the_post();
 												 <div class="nine columns">
 														<p><span class="highlight">These reviews are from verified customers</span><br>
 																<span>Take a few minutes and give us your feedback.<br>
-																<a href="http://www.yelp.com/biz/bikeriders-brooklyn" target="_blank">Post your review<span class="arrow">→</span></a></span></p>
+																<a href="https://bikeridersnyc.fullslate.com/reviews/new" target="_blank">Post your review<span class="arrow">→</span></a></span></p>
 												</div>
 										</div>
 								</div>

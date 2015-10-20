@@ -30,7 +30,9 @@
 		.featurepost .m_item .m_overlay h2 {
 			font-size: 18px !important;
 		}
-
+		.flex-control-paging {
+			display: none;
+		}
 		#primary-nav ul {
 			margin-top: 17px;
 			li{
@@ -71,6 +73,11 @@
 
 	/* IPHONE */
 	@media only screen and (min-width: 320px) and (max-width: 568px) {
+		body[data-menu-position="open"] {
+			header {
+				position: absolute!important
+			}
+		}
 		header {
 			height:80px;
 		}

@@ -45,7 +45,9 @@
 				<header>
 						<div class="container">
 
-							<a href="#menu" id="mobile-open">Open Menu</a>
+							<a href="#menu" id="mobile-open">
+									<i class="hamburger"></i>
+							</a>
 
 							<div class="row">
 								<?php

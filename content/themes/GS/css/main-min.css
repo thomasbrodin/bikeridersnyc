@@ -1938,23 +1938,27 @@ nav a:hover, nav a:focus {
 #mobile-open {
   display: none;
   position: absolute;
-  height: 30px;
-  width: 20px;
-  background-color: #000;
-  top: 15px;
+  height: 24px;
+  width: 24px;
   z-index: 1400;
-  left: 15px;
-  text-indent: -9999px; }
-
-#mobile-open:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0px;
-  width: 100%;
-  height: 5px;
-  border-top: 15px double #fff;
-  border-bottom: 5px solid #fff; }
+  margin: 15px; }
+  #mobile-open i {
+    display: block;
+    width: 24px;
+    height: 2px;
+    margin: 12px 0;
+    background: #fff; }
+    #mobile-open i:after, #mobile-open i:before {
+      content: '';
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: #fff;
+      position: absolute; }
+    #mobile-open i:after {
+      margin-top: -7px; }
+    #mobile-open i:before {
+      margin-top: 7px; }
 
 #jPanelMenu-menu ul.sub-menu li a {
   padding-left: 30px; }
@@ -2352,7 +2356,10 @@ footer input[type="email"] {
   border: 0;
   border-radius: 0; }
 
-footer input[type="text"]:focus, footer input[type="password"]:focus, footer input[type="email"]:focus, footer textarea:focus {
+footer input[type="text"]:focus,
+footer input[type="password"]:focus,
+footer input[type="email"]:focus,
+footer textarea:focus {
   color: #fff; }
 
 footer input[type="text"] {
@@ -2402,20 +2409,22 @@ footer form {
 
 footer .row:first-child .columns:not(:first-child) {
   border-left: 1px solid #858585;
-  min-height: 200px;
+  min-height: 175px;
   padding-left: 15px; }
 
 footer .social {
   text-align: right;
   padding-right: 0; }
 
+footer li {
+  margin-bottom: 8px;
+  line-height: 18px; }
 footer .social ul {
   margin-bottom: 0;
   text-align: right; }
-
-.social ul li {
-  display: inline-block;
-  margin-right: 5px; }
+  footer .social ul li {
+    display: inline-block;
+    margin-right: 5px; }
 
 .social img:hover {
   opacity: 0.7; }
@@ -2778,6 +2787,9 @@ p.fs-instructions.fs-special {
   .featurepost .m_item .m_overlay h2 {
     font-size: 18px !important; }
 
+  .flex-control-paging {
+    display: none; }
+
   #primary-nav ul {
     margin-top: 17px; }
     #primary-nav ul li {
@@ -2809,6 +2821,9 @@ p.fs-instructions.fs-special {
     width: 65px; } }
 /* IPHONE */
 @media only screen and (min-width: 320px) and (max-width: 568px) {
+  body[data-menu-position="open"] header {
+    position: absolute !important; }
+
   header {
     height: 80px; }
 

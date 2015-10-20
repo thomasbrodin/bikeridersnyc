@@ -35,9 +35,9 @@ if( !function_exists('vp_load_css') ) {
 	function removeHeadLinks() {
 			remove_action('wp_head', 'rsd_link');
 			remove_action('wp_head', 'wlwmanifest_link');
+			remove_action('wp_head', 'wp_generator');
 		}
 		add_action('init', 'removeHeadLinks');
-		remove_action('wp_head', 'wp_generator');
 
 if ( ! isset( $content_width ) ) $content_width = 960;
 
