@@ -215,34 +215,72 @@ $sections[] = array(
 						'std' => get_bloginfo('admin_email')
 
 						),
+						array(
 
+							'id' => 'logo_home',
+
+							'type' => 'upload',
+
+							'title' => 'Logo Icon',
+
+							'sub_desc' => 'Icon on the home Page'
+
+							),
+							
 					array(
 
-						'id' => 'topheader_smalltext',
+						'id' => 'link_1',
 
 						'type' => 'text',
 
-						'title' => 'Top header text',
+						'title' => 'Link 1',
 
-						'sub_desc' => 'This appears under the home slider text above. Some little description about you here.',
+						'sub_desc' => 'Home page Link 1',
 
-						'std' => 'Bikeridersnyc.com'
+						'std' => 'Concierge'
+
+					),
+					array(
+
+						'id' => 'title_1',
+
+						'type' => 'text',
+
+						'title' => 'Title for Link 1',
+
+						'sub_desc' => 'Link Title',
+
+						'std' => 'Concierge'
 
 						),
 
 					array(
 
-						'id' => 'topheader_smallertext',
+						'id' => 'link_2',
 
 						'type' => 'text',
 
-						'title' => 'Top header smaller text',
+						'title' => 'Link 2',
 
-						'sub_desc' => 'This appears after the Header Text on the homepage, some more info about you here.',
+						'sub_desc' => 'Home Page Link 2',
 
-						'std' => 'Premium Bicycle Services'
+						'std' => 'Distribution'
 
 						),
+
+						array(
+
+							'id' => 'title_2',
+
+							'type' => 'text',
+
+							'title' => 'Title for Link 2',
+
+							'sub_desc' => 'Link title',
+
+							'std' => 'Distribution'
+
+							),
 
 					array(
 

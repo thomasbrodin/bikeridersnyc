@@ -47,10 +47,12 @@ get_header(); ?>
 										if ($images) { ?>
 												<?php foreach ($images as $image) : ?>
 													 <li class="slide">
-														<a href="<?php echo $image['url']; ?>">
-																<img src="<?php echo $image['large']['src']; ?>"/>
-																<span class="container caption"><?php echo $image['title']; ?></span>
-														</a>
+														 <div class="bigbg" style="background-image:url('<?php echo $image['large']['src']; ?>')"></div>
+														 <div id="caption">
+															 <div class="container">
+																 <p class="legende"><?php echo $image['title']; ?></p>
+															 </div>
+														 </div>
 													 </li>
 												<?php endforeach;
 										} else { ?><img src="<?php bloginfo('template_directory'); ?>/images/image-needed.png" alt="Image Needed" />
@@ -65,54 +67,30 @@ get_header(); ?>
 
 				</div><!--/ #feature -->
 
-
-		<div class="container">
-			<div class="row">
-				<div class="twelve columns">
-						<div class="title">
-								<?php if(isset($bk['topheader_smalltext']) && $bk['topheader_smalltext']) { ?>
-										<h1 class="small"><?php echo $bk['topheader_smalltext'];?></h1>
-								<?php } ?>
-								<div class="intro-line"></div>
-								<?php if(isset($bk['topheader_smallertext']) && $bk['topheader_smallertext']) { ?>
-										<p><?php echo $bk['topheader_smallertext'];?><div class="buttonbook"><a class="appointment" href="appointment">BOOK NOW<span class="arrow">→</span></a></div></p>
-								<?php } ?>
-						 </div> <!-- end title -->
-				 </div><!-- end columns -->
-			</div>
-
-			<div class="row">
-				<div class="twelve columns featurepost">
-						<?php global $post;
-								$myposts = query_posts('orderby=menu_order&post_type=post&showposts=12&category=3');
-								foreach($myposts as $post) : setup_postdata($post); ?>
-								<article <?php post_class('m_item'); ?>>
-										 <?php
-										$special_title = get_post_meta($post->ID, 'special_title', true);
-										$link_shop = get_post_meta($post->ID, 'link_shop', true); ?>
-
-										<div class="m_item_inner" onclick="window.location='<?php if ($link_shop) { echo $link_shop; } else { the_permalink(); } ?>'">
-												<div class="m_overlay <?php if ($special_title) : echo 'specials'; endif;?>">
-														<?php
-														if ($special_title) {
-																echo '<div class="ribbon-wrapper-home"><div class="ribbon-home">SPECIAL</div></div><h3>' .$special_title.'</h3>';
-																} else {
-																		the_title( '<h2>', '</h2>' );
-																} ?>
-												</div>
-
-														<?php
-																		if(has_post_thumbnail()) {
-																				$image_src = wp_get_attachment_image_src( get_post_thumbnail_id(),'medium' );
-																				echo '<img src="' . $image_src[0] . '" class="scale-with-grid"/>';
-																				}
-																?>
-
-										</div>
-								</article>
-								<?php endforeach; ?>
-						</div><!-- end columns -->
+		<div class="splash">
+			<div class="middle">
+				<div class="inner">
+					<div class="container">
+						<h1>
+							<span class="icon-logo">
+								<?php
+									if(isset($bk['logo_home']) && $bk['logo_home']) {
+									 echo "<img src='" .$bk['logo_home']. "'>";
+									 }
+								?>
+							</span>
+							<?php
+								if(isset($bk['link_1']) && $bk['link_1']) {
+								 echo "<a href='" .$bk['link_1']. "'>".$bk['title_1']. "</a>";
+								 }
+								if(isset($bk['link_2']) && $bk['link_2']) {
+									echo "<a href='" .$bk['link_2']. "'>" .$bk['title_2']. "</a>";
+								}
+							?>
+						</h1>
+					</div>
 				</div>
-		</div><!-- end container -->
+			</div>
+		</div>
 
 <?php get_footer();?>

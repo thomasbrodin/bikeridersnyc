@@ -757,6 +757,10 @@ nav a:hover,nav a:focus {
 	text-transform: uppercase;
 	color: $lightGrey;
 	display: inline-block;
+	opacity: 0;
+	@media (min-width: 1110px) {
+		opacity: 1
+	}
 }
 
 .page-template-page-service-php #tagline p,
@@ -873,11 +877,11 @@ nav ul, nav ol {
 
 #feature {
 	width: 100%;
-	height: 550px;
 	margin: 0;
 	padding: 0;
-	position: relative;
-	padding-top: 85px;
+	z-index: -1;
+	position:fixed;
+	top:0;
 }
 
 #feature h1 {
@@ -885,56 +889,92 @@ nav ul, nav ol {
 }
 
 #feature .flexslider {
-	margin: 0;
-	height: 540px;
-	width: 100%;
-	position: absolute;
-	text-align: center;
+	display: block;
+	position: relative;
+	height: 100%!important;
+	overflow: hidden!important;
+	width: 100%!important;
+	margin-bottom: 0
 }
 
 #feature .flex-direction-nav {
-		display: none;
+		height:100%;
 }
 
 #feature .flex-viewport {
 	max-height: 590px;
 }
-#feature .flexslider .slides img {
-	display: block;
-	height: 500px;
-	left: 50%;
-	position: absolute;
-	margin-left: -1000px;
-	width: auto;
-	max-width: none!important;
+#feature .flexslider .slides,
+#feature .flexslider .slides li{
+	height: 100%!important;
 }
-
-span.caption {
-	text-align: left;
-	display: block;
-	padding-left: 30px;
-	height: 20px;
-	margin-top: 10px;
-	top: 500px;
+#feature .flexslider .slides > li {
+	padding:0;
 }
-.slides a {
-	text-decoration: none;
+#feature .flexslider .bigbg{
+	width: 100%;
+	height: 100%;
+	background: 50% 50% no-repeat;
+	background-size: cover;
 }
-
-#controls {
-	margin-bottom: 20px;
-	border-bottom: 1px solid #d8d8d8;
-	top: 498px;
+.splash {
+	position: fixed;
+	height: 100%;
+	width:100%;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+	background: linear-gradient(#1E1E20, #1E1E20 15%, transparent) no-repeat;
+	&:before {
+		content: "";
+		display: inline-block;
+		height: 100%;
+		vertical-align: middle;
+	}
+	.middle {
+		max-width: 100%;
+		display: inline-block;
+		vertical-align: middle;
+		.inner {
+			position: absolute;
+			width: 100%;
+			h1 {
+				color:#fff;
+				font-size: 48px;
+				font-weight: 600;
+				letter-spacing: 0.08em;
+				line-height:60px;
+				text-transform: uppercase;
+				text-align: left;
+				margin-top: -150px;
+				span.icon-logo {
+					display: block;
+					max-width: 100px;
+					padding-bottom: 20px;
+				}
+				a {
+					text-decoration: none;
+					color:#fff;
+					display: block;
+					-webkit-transition: color 500ms ease 0s;
+					-moz-transition: color 500ms ease 0s;
+					-ms-transition: color 500ms ease 0s;
+					-o-transition: color 500ms ease 0s;
+					transition: color 500ms ease 0s;
+					&:hover {
+						color:$redColor
+					}
+				}
+			}
+		}
+	}
 }
-
-#controls .flex-control-nav {
-	height: 20px;
-	text-align: right;
-	position: relative;
-	margin: 10px 0;
-	bottom: 0;
+body.home {
+	.flex-control-paging {
+		display: none;
+	}
 }
-
 .flex-control-paging {
 	margin-top: -10px;
 	position: relative;

@@ -1,4 +1,11 @@
 jQuery(document).ready(function($) {
+				function resize(){
+					var windowHeight = $(window).height();
+							$("#feature").css({ height: windowHeight });
+							$(".home footer").css({ marginTop: windowHeight });
+				}
+				$(window).on('resize', resize);
+				resize();
 				var root = $('html, body');
 				$('a.smoothy').click(function() {
 					 var href = $.attr(this, 'href');
@@ -84,10 +91,9 @@ jQuery(document).ready(function($) {
 					if($window.innerWidth() < 568 && !jPMisOn) togglejPM();
 
 				 $('.flexslider').flexslider({
-						controlsContainer: "#controls",
 						animation: "fade",
-						slideshow: false,
-						slideshowSpeed: 7000,
+						slideshow: true,
+						slideshowSpeed: 5000,
 						animationSpeed: 1000
 					});
 });
