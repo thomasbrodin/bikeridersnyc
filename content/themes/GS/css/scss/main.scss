@@ -26,10 +26,6 @@
 		h2 {
 			font-size: 36px !important;
 		}
-
-		.featurepost .m_item .m_overlay h2 {
-			font-size: 18px !important;
-		}
 		.flex-control-paging {
 			display: none;
 		}
@@ -75,6 +71,12 @@
 	@media only screen and (min-width: 320px) and (max-width: 568px) {
 		body[data-menu-position="open"] {
 			header {
+				position: absolute!important
+			}
+			.splash {
+				position: absolute!important
+			}
+			#feature {
 				position: absolute!important
 			}
 		}
@@ -123,13 +125,15 @@
 			display: block;
 		}
 
-		span.caption {
-		 display: none
-		}
-
-		h1.small {
+		.splash h1 {
 			font-size: 30px !important;
-			line-height: 35px;
+			span.icon-logo {
+				max-width: 75px!important;
+				padding-bottom: 10px!important
+			}
+			a {
+				line-height: 30px;
+			}
 		}
 		h2 {
 			font-size: 24px !important;
@@ -160,20 +164,6 @@
 
 		.container .columns.featurepost {
 		margin-bottom: 30px;
-		}
-
-		#feature {
-			height: 230px;
-			padding-top: 80px;
-		}
-
-		#feature .flexslider {
-			height: 235px;
-		}
-
-		#feature .flexslider .slides img {
-			height: 225px;
-			margin-left: -450px
 		}
 
 		#controls {
